@@ -3,6 +3,7 @@ h1 {
     font-size: 300%;
 }
 
+/* ??Why isn't this text aligning right?? */
 h2 {
     font-size: 200%;
     text-align: right;
@@ -16,7 +17,7 @@ h3 {
     font-size: 150%;
 }
 
-
+/* header: name and nav */
 header {
     display: flex;
     flex-flow: row wrap;
@@ -44,26 +45,37 @@ header nav a:visited {
     color: darkgray
 }
 
+main {
+    background-color: #BBD7E5;
+}
+
+/* header banner and profile pic */
+
 #header-image {
-    background-image: url(./images/header.JPG);
+    background-image: url(./images/header.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
     width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
-main {
-    background-color: #BBD7E5;
-    display: flex;
-    flex-direction: column;
+#header-image img {
+    max-height: 200px;
+    max-width: 200px;
+    padding-left: 30px;
+    padding-top: 30px;
+    flex: 1 .25 1;
 }
+
+/* about me section: flex container */
 
 #about-me {
     display: flex;
     flex-flow: row wrap;
 }
 
-/* need to figure out how to align text right */
 
 #about-me p {
     flex: 1 1 0;
@@ -71,50 +83,56 @@ main {
     text-align: justify;
 }
 
+/* work section: flex container */
 #work {
     display: flex;
     flex-flow: row wrap;
 }
 
+/* image links to projects: flex sub-container */
 #work article {
     display: flex;
     flex-flow: row wrap;
     flex: 1 1 0;
+    justify-content: space-around;
 }
 
-/* need to come up with a better system to resize pics */
-#work img {
-    height: 200px;
-    width: 300px;
+/* ??pics don't resize properly */
+.no-grow {
+    height: 300px;
+    width: 400px;
     margin: 10px;
-    flex: 0 0 0;
+    flex: 1 0 0;
     border: 2px solid #3B4140;
+}
+
+#grow {
+    height: 600px;
+    width: 800px;
+    margin: 10px;
+    border: 2px solid #3B4140;
+    flex: 1 0 0;
 }
 
 #work img:hover {
     filter: saturate(.4);
-    border: 2px solid #3b414066
+    border: 2px solid #3b414066;
+    cursor: pointer;
 }
 
-img {
-    position: relative;
-    width: 200px;
-    height: 300px;
-}
-
-
-/* #work::after {
+#work img:hover::after {
     content: "hello!";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
+    width: 50px;
+    height: 50px;
     color: #FFF;
     background-color: blue;
-} */
+}
 
+
+/* ??how to get hover titles on images?? */
+
+/* contact me section: flex container */
 #contact-me {
     display: flex;
     flex-flow: row wrap;
@@ -130,6 +148,7 @@ img {
     flex-flow: row wrap;
     align-items: flex-end;
     justify-content: space-around;
+    align-content: center;
     padding: 0px 50px;
 }
 
