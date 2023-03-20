@@ -8,12 +8,12 @@ Building the site was a challenging exercise in some advance CSS skills. The res
 
 ## Usage
 
-The links provided in the header allow you to jump to any section of my portfolio with one quickl click. The picture tiles in the "Work" section are links to different projects I (will eventually) worked on. 
+The links provided in the header allow you to jump to any section of my portfolio with one quick click. The picture tiles in the "Work" section are links to different projects I (will eventually have) worked on. 
 
 Three ways to reach out to me (email, phone, and GitHub) are provided in the footer area. 
 
 
-SCREENSHOT HERE
+![Project Screenshot](./assets/images/project-screenshot.png)
 
 
 ## License
