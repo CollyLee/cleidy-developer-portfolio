@@ -1,3 +1,7 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 h1 {
     margin: 10px 10px;
     font-size: 300%;
@@ -320,5 +324,23 @@ footer p {
         height: 200px;
         margin: 15px
     }
+
+    #contact-me {
+        display: inline;
+        text-align: center;
+    }
+
+    #contact-me h2 {
+        text-align: center;
+        display: block;
+        margin-bottom: 25px;
+        border-right: 2px solid black;
+        padding: 0px
+    }
+    
+    #contact-me nav {
+        text-align: center;
+        display: block;
+        line-height: 1.25;
 
 }
