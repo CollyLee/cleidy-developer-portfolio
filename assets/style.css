@@ -92,9 +92,8 @@ main {
     align-content: space-around;
 }
 
-figure {
-    background-size: auto;
-    background-position: left;
+article a {
+    background-size: cover;
     border: 2px solid black;
 }
 
@@ -102,7 +101,7 @@ figure {
     flex: 1 1 80%;
     background-image: url(./images/project-1.jpg);
     height: 400px;
-    margin: 15px
+    margin: 15px;
 }
 
 #small-project-2 {
@@ -134,7 +133,7 @@ figure {
 }
 
 
-figure:hover {
+article a:hover {
     filter: saturate(.4);
     cursor: pointer;
     border: 2px solid lightgray;
@@ -163,7 +162,7 @@ figure:hover {
     flex-wrap: wrap;
 }
 
-#contact-me article {
+#contact-me nav {
     flex: 1 1 0;
     padding: 15px;
     text-align: justify;
