@@ -86,18 +86,17 @@ main {
 #work article {
     display: flex;
     flex-wrap: wrap;
-    flex: 0 0 80%;
+    flex: 1 1 80%;
     padding: 15px;
     justify-content: space-around;
     align-content: space-around;
 }
 
 figure {
-    background-size: cover;
-    background-position: center;
+    background-size: auto;
+    background-position: left;
     border: 2px solid black;
 }
-
 
 #large-project-1 {
     flex: 1 1 80%;
@@ -143,7 +142,7 @@ figure:hover {
 
 .overlay {
     display: block;
-    margin-top: 170px;
+    margin-top: 160px;
     background: rgb(255, 255, 240, .75);
     color: #3B4140;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
